@@ -1,0 +1,21 @@
+.short-cart-bc {
+    position: fixed;
+    animation: .3s fadeIn ease-in-out;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.641);
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    pointer-events: none;
+    @include transition;
+    opacity: 0;
+
+    & .active {
+        visibility: visible;
+        pointer-events: all;
+        opacity: 1;
+    }
+}
+
+.short-cart {}

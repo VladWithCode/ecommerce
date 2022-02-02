@@ -1,0 +1,164 @@
+.product-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.product {
+    width: 1200px;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
+
+    &__img-box {
+        width: 100%;
+        flex: 0 1 40%;
+        overflow: hidden;
+        max-height: 50%;
+
+        >div {
+            position: unset !important;
+        }
+
+        & .img {
+            object-fit: cover;
+            width: 100% !important;
+            position: relative !important;
+            height: unset !important;
+        }
+    }
+
+    &__info {
+        flex: 0 1 calc(60% - 8rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        @include respond(phone) {
+            flex: 0 1 60%;
+            margin-top: 3rem;
+        }
+
+        & .bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            @include respond(phone) {
+                align-items: center;
+            }
+
+            & .description {
+                margin: 3rem 0;
+                font-size: 1.6rem;
+            }
+
+            & .btn-add {
+                background-color: $color-secondary;
+                border: none;
+                outline: none;
+                border-radius: .8rem;
+                color: white;
+                padding: 2rem 4rem;
+                cursor: pointer;
+                @include transition;
+                margin-top: 3rem;
+
+                &:hover {
+                    background-color: darken($color-secondary, 10);
+                }
+
+            }
+        }
+
+        & .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        & .title {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        & .item {
+            padding: 1.5rem 2rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid $color-bc-accent;
+
+            @include respond(phone) {
+                justify-content: center;
+            }
+
+            &__title {
+                flex: 0 1 25%;
+                text-transform: capitalize;
+            }
+
+            &.price {
+                padding: 2.5rem 2rem;
+            }
+
+            & .price {
+                color: $color-secondary;
+                font-size: 3rem;
+            }
+
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+
+                & span {
+                    padding: .5rem 2rem;
+                    border: 1px solid $color-bc-accent;
+                    cursor: pointer;
+                    @include transition;
+
+                    &.active,
+                    &:hover {
+                        border-color: $color-secondary;
+                        color: $color-secondary;
+                    }
+                }
+
+            }
+
+            &__counter {
+
+                & button {
+                    @include transition;
+                    width: 3rem;
+                    height: 3rem;
+                    outline: none;
+                    background-color: transparent;
+                    border: 1px solid $color-bc-accent;
+                    cursor: pointer;
+
+                    &:hover {
+                        border-color: $color-primary;
+                    }
+                }
+
+                & .qty {
+                    color: $color-primary;
+                    padding: 0 2rem;
+                }
+
+
+
+            }
+
+        }
+
+    }
+}

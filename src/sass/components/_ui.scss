@@ -1,0 +1,208 @@
+.toast {
+    position: fixed;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 5rem;
+    background-color: $color-danger;
+    color: white;
+    pointer-events: none;
+    animation: uiError 4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    font-weight: bold;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    z-index: 4;
+    text-align: center;
+    background-color: $color-primary;
+    line-height: 1.1;
+
+    &.error {
+        background-color: $color-secondary;
+    }
+}
+
+@keyframes uiError {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    15% {
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+
+    85% {
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+
+.cont-spinner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.248);
+    border-radius: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.spinner {
+    border: .3rem solid white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border-left-color: transparent;
+
+    animation: spin 1.3s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.not-found {
+    min-height: 30rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+
+    & p {
+        margin-top: 3rem;
+
+        & a {
+            color: $color-secondary;
+            text-decoration: underline;
+        }
+    }
+}
+
+.modal-bc {
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn .3s;
+    pointer-events: none;
+}
+
+.modal {
+    background-color: white;
+    border-radius: .8rem;
+    min-height: 40rem;
+    max-height: 80%;
+    width: 50rem;
+    max-width: 90%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.393);
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: all;
+    position: relative;
+    animation: .3s popUp .4s ease-in-out;
+    overflow: hidden;
+    animation-fill-mode: backwards;
+
+    &__title {
+        font-size: 2.8rem;
+        color: $color-primary;
+    }
+
+    &__info {
+
+        & .msg {
+            margin: 5rem 0;
+
+            & .order-link {
+                color: $color-secondary;
+                font-weight: 700;
+                text-decoration: underline;
+                @include transition;
+
+                &:hover {
+                    color: darken($color-secondary, 10);
+                }
+            }
+        }
+
+        & .order-id {
+            color: $color-primary;
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+            cursor: pointer;
+            @include transition;
+
+            &:hover {
+                color: darken($color-primary, 10);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    & .close {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        color: $color-secondary;
+        // font-weight: 700;
+        font-size: 2.5rem;
+        cursor: pointer;
+        @include transition;
+
+        &:hover {
+            color: darken($color-secondary, 10);
+        }
+    }
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes popUp {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

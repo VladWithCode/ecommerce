@@ -1,0 +1,289 @@
+.display-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+
+  & svg {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  & p {
+    margin: 0 0.5rem;
+    text-transform: uppercase;
+  }
+
+  &__qty {
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-danger;
+    color: white;
+
+    & span {
+      pointer-events: none;
+    }
+  }
+}
+
+.carrito {
+  width: 1400px;
+  min-height: 25rem;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+  }
+
+  &-empty {
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & p {
+      font-size: 3rem;
+      color: $color-text-light !important;
+      line-height: 1.2;
+      max-width: 70%;
+      text-align: center;
+    }
+  }
+}
+
+.products {
+  flex: 0 1 50%;
+
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12rem;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 2rem 0;
+    align-items: center;
+    border-bottom: solid 1px $color-bc-accent;
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
+    & .delete {
+      flex: 0 1 calc(3%);
+      color: $color-secondary;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    & .image {
+      width: 100%;
+      flex: 0 1 20%;
+      overflow: hidden;
+
+      > div {
+        position: unset !important;
+      }
+
+      & .img {
+        object-fit: cover;
+        width: 100% !important;
+        position: relative !important;
+        height: unset !important;
+      }
+    }
+
+    & .info {
+      flex: 0 1 50%;
+
+      & h3 {
+        font-size: 1.5rem;
+      }
+
+      & p {
+        margin: 1rem 0;
+
+        & strong {
+          color: $color-primary;
+        }
+      }
+
+      & .counter {
+        & button {
+          @include transition;
+          width: 3rem;
+          height: 3rem;
+          outline: none;
+          background-color: transparent;
+          border: 1px solid $color-bc-accent;
+          cursor: pointer;
+
+          &:hover {
+            border-color: $color-primary;
+          }
+        }
+
+        & .qty {
+          color: $color-primary;
+          padding: 0 2rem;
+        }
+      }
+    }
+
+    & .total {
+      text-align: right;
+
+      & span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  & .price-resume {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    margin-top: 3rem;
+
+    & strong {
+      margin-left: 1rem;
+    }
+
+    & span {
+      font-size: 1.6rem;
+    }
+
+    & .shipment {
+      margin: 1rem 0;
+      font-size: 1.6rem;
+
+      &.free {
+        color: $color-primary;
+      }
+    }
+
+    & .resume-total {
+      font-size: 2.5rem;
+      border-bottom: 2px solid $color-secondary;
+      color: $color-secondary;
+    }
+  }
+}
+
+.client-info {
+  flex: 0 1 calc(45% - 2rem);
+  background-color: $color-primary;
+  color: white;
+  padding: 3rem;
+  margin: 2rem 0;
+  border-radius: 0.8rem;
+  position: relative;
+
+  @include respond(tab-port) {
+    margin-top: 5rem;
+    width: 100%;
+  }
+
+  & h3 {
+    font-size: 2.3rem;
+    line-height: 1;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  & .form {
+    display: flex;
+    flex-direction: column;
+
+    &__item,
+    & .group .form__item {
+      flex: 0 1 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 1rem 0;
+
+      & label,
+      a {
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+
+      & input {
+        background-color: transparent;
+        border: none;
+        color: white;
+        padding: 1rem 1rem 0.4rem 1rem;
+        border-bottom: 2px solid white;
+        outline: none;
+        width: 100%;
+        text-align: right;
+
+        &[type='checkbox'] {
+          width: auto;
+          margin: auto 0;
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    & .group {
+      display: flex;
+      text-align: left;
+
+      & .form__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        & input {
+          width: 50%;
+        }
+      }
+    }
+
+    .chk-group {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+}
+
+.conekta-iframe-container {
+  height: 590px;
+  overflow: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+  & > #conektaIframeContainer div {
+    height: 100vh;
+    width: 100%;
+  }
+}

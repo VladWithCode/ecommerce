@@ -1,0 +1,67 @@
+.checkout {
+    margin-top: 2rem;
+    // display: flex;
+    // flex-direction: column;
+    background-color: white;
+    min-height: 18rem;
+    border-radius: .8rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    & h3 {
+        font-size: 2rem;
+        line-height: 1;
+        margin-bottom: 3rem;
+        font-weight: 300;
+        color: $color-text;
+    }
+
+    & .btn {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        & button {
+            @include transition;
+            background-color: $color-secondary;
+            color: white;
+            border: none;
+            padding: 1rem 3rem;
+            cursor: pointer;
+            position: relative;
+
+            &:hover {
+                background-color: darken($color-secondary, 10);
+            }
+        }
+    }
+}
+
+#messageButton {
+
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    & button {
+        @include transition;
+        background-color: $color-secondary;
+        color: white;
+        border: none;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+            background-color: darken($color-secondary, 10);
+        }
+    }
+
+}
+
+.conekta-iframe-container {
+    overflow: hidden;
+}

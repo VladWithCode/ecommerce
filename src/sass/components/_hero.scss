@@ -1,0 +1,31 @@
+.hero {
+    width: 1500px;
+    max-width: 100%;
+    overflow: hidden;
+    // height: 40rem;
+    max-height: 60rem;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    >div {
+        position: unset !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    & .img {
+        object-fit: cover;
+        width: 100% !important;
+        position: relative !important;
+        height: unset !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
