@@ -1,6 +1,7 @@
 import { combineReducers, createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import { customerReducer } from '../reducers/customerReducer';
+import { uiReducer } from '../reducers/uiReducer';
 
 const composeEnhancers =
   (typeof window !== 'undefined' &&
@@ -9,6 +10,7 @@ const composeEnhancers =
 
 const reducers = combineReducers({
   customer: customerReducer,
+  ui: uiReducer,
 });
 
 export const store = createStore(
