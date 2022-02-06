@@ -22,7 +22,7 @@ export const useCart = () => {
 
   return {
     cart: data?.cart || storedCart,
-    error,
+    error: error?.info.status !== 'AUTH_ERR' ? error : null,
     loading: !data && !error,
   };
 };
