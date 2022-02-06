@@ -15,7 +15,7 @@ export const uiReducer = (state = initialState, action) => {
         ...state,
         toastActive: true,
         toastMsg: action.payload.msg,
-        toastErr: !!action.payload.err,
+        toastErr: !!action.payload.isError,
       };
 
     case uiTypes.uiHideToast:
