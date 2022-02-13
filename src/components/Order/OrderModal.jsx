@@ -17,7 +17,7 @@ function OrderModal({ orderId }) {
   return (
     <div className='modal-bc'>
       <div className='modal'>
-        <div className='modal__title'></div>
+        <span className='modal__title'>Compra exitosa</span>
         <div className='modal__info'>
           <p className='msg'>
             Nos pondremos en contacto contigo para ver los detalles del pedido.

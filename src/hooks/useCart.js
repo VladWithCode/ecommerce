@@ -1,15 +1,27 @@
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import useSWR from 'swr';
+import { cartSet } from '../actions/cartActions';
 import {
   getLocalStorageItem,
   setLocalStorageItem,
 } from '../functions/miscHelpers';
 
 export const useCart = () => {
-  const { data, error } = useSWR('/api/public/cart');
-  let storedCart = getLocalStorageItem('cart');
+  const dispatch = useDispatch();
+  const storedCart = useSelector(state => state.cart);
+  const { data, error } = useSWR('/api/public/cart', {
+    errorRetryCount: 2,
+  });
 
-  if (!data?.cart && !storedCart) {
-    storedCart = {
+  let cart = data?.cart
+    ? data.cart
+    : !!Object.keys(storedCart).length
+    ? storedCart
+    : getLocalStorageItem('cart');
+
+  if (!cart) {
+    cart = {
       subtotal: 0,
       tax: 0,
       shipment: 0,
@@ -17,11 +29,15 @@ export const useCart = () => {
       items: [],
     };
 
-    setLocalStorageItem('cart', storedCart);
+    setLocalStorageItem('cart', cart);
   }
 
+  useEffect(() => {
+    dispatch(cartSet(cart));
+  }, [data]);
+
   return {
-    cart: data?.cart || storedCart,
+    cart,
     error: error?.info.status !== 'AUTH_ERR' ? error : null,
     loading: !data && !error,
   };

@@ -16,6 +16,7 @@ export default function App() {
       value={{
         refreshInterval: SWR_REFRESH_INTERVAL,
         fetcher: swrFetcher,
+        errorRetryCount: 5,
       }}>
       <div className='App'>
         <NavBar />

@@ -1,0 +1,17 @@
+.loading {
+  font-size: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__spinner {
+    width: 4rem;
+    height: 4rem;
+    border: 6px solid $color-primary-ligth;
+    border-bottom-color: $color-primary;
+    border-radius: 50%;
+    animation: 2s infinite load;
+  }
+}

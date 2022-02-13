@@ -8,7 +8,7 @@ function NavCart() {
   if (error) console.log(error);
 
   return (
-    <Link className='display-cart' to={'cart'}>
+    <Link className='display-cart' to={'carrito'}>
       <svg>
         <use href='/icons/cart.svg#cart'></use>
       </svg>

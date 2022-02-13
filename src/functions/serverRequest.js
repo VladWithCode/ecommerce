@@ -31,6 +31,6 @@ export const serverRequest = async (endpoint, method, body, headers) => {
     const res = await fetch(SERVER_URI + endpoint, options);
     return await res.json();
   } catch (err) {
-    return err;
+    return { err };
   }
 };

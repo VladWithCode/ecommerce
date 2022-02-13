@@ -23,7 +23,7 @@ function Footer() {
             <Link to='/devoluciones' className='footer__link'>
               Politica de Devoluciones
             </Link>
-            <Link to='/privacidad' className='footer__link'>
+            <Link to='/politica-de-privacidad' className='footer__link'>
               Politica de Privacidad
             </Link>
             <Link to='/terminos-y-condiciones' className='footer__link'>

@@ -12,7 +12,9 @@ function NavNavigation() {
       {loading || !categories?.length > 0 ? (
         <p className='navbar__link'>Cargando...</p>
       ) : (
-        categories.map(ctg => <NavLink key={ctg} to={ctg} keystr={ctg} />)
+        categories.map(ctg => (
+          <NavLink key={ctg} to={`/productos/categoria/${ctg}`} keystr={ctg} />
+        ))
       )}
     </div>
   );

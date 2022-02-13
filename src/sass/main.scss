@@ -1,6 +1,8 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
+@import 'base/typography';
+@import 'base/animations';
 @import 'base/base';
 
 @import 'components/cart';
@@ -11,6 +13,7 @@
 @import 'components/forms';
 @import 'components/genericContainer';
 @import 'components/hero';
+@import 'components/loading';
 @import 'components/navbar';
 @import 'components/newsletter';
 @import 'components/orders';
