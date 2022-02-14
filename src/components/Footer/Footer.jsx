@@ -14,7 +14,7 @@ function Footer() {
             <Link to='/carrito' className='footer__link'>
               Carrito
             </Link>
-            <Link to='/ver-pedido' className='footer__link'>
+            <Link to='/orden' className='footer__link'>
               Ver mi pedido
             </Link>
             <Link to='/preguntas-frecuentes' className='footer__link'>

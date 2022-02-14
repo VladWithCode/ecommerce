@@ -12,6 +12,8 @@ import Product from './components/Products/Product';
 import Cart from './components/Cart/Cart';
 import Privacy from './components/Privacy';
 import Terms from './components/Terms';
+import Order from './components/Order/Order';
+import OrderSearch from './components/Order/OrderSearch';
 
 ReactDOM.render(
   <Provider store={store}>
@@ -24,6 +26,10 @@ ReactDOM.render(
           </Route>
           <Route path='producto/:id' element={<Product />} />
           <Route path='carrito' element={<Cart />} />
+          <Route path='orden'>
+            <Route index element={<OrderSearch />} />
+            <Route path={':id'} element={<Order />} />
+          </Route>
           <Route path='politica-de-privacidad' element={<Privacy />} />
           <Route path='terminos-y-condiciones' element={<Terms />} />
           <Route path='*' element={<NotFound />} />
