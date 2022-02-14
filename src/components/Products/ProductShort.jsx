@@ -6,7 +6,7 @@ import { priceToString } from '../../functions/miscHelpers';
 
 function ProductShort({ product, isOrderDetail }) {
   const dispatch = useDispatch();
-  const { product: id, name, price, qty, imgs } = product;
+  const { product: id, name, price, qty, imgs, totalPrice } = product;
 
   return (
     <div className='products__item'>
@@ -24,7 +24,7 @@ function ProductShort({ product, isOrderDetail }) {
         <h3>{name}</h3>
         <p>
           <strong>
-            ${priceToString(price)} &times; {qty}
+            ${priceToString(isOrderDetail ? price / 100 : price)} &times; {qty}
           </strong>
         </p>
         {!isOrderDetail && (
@@ -43,7 +43,10 @@ function ProductShort({ product, isOrderDetail }) {
       </div>
       <div className='total'>
         <span>Total:</span>
-        <p>USD${priceToString(product.totalPrice)}</p>
+        <p>
+          USD$
+          {priceToString(isOrderDetail ? product.total / 100 : totalPrice)}
+        </p>
       </div>
     </div>
   );
