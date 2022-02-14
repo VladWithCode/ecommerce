@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 import { cartAddItem } from '../../actions/cartActions';
 import { productClear, productSet } from '../../actions/productActions';
+import { uiTempToast } from '../../actions/uiActions';
 import { SERVER_URI } from '../../config/globals';
 import { priceToString } from '../../functions/miscHelpers';
 import { serverRequest } from '../../functions/serverRequest';
@@ -44,6 +45,7 @@ function Product() {
 
   const addToCart = async e => {
     dispatch(cartAddItem({ ...product, qty }));
+    dispatch(uiTempToast('El producto se ha agregado a la bolsa'));
   };
 
   return (
