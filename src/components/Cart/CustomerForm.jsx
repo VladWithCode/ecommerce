@@ -41,6 +41,7 @@ function CustomerForm() {
             id='name'
             value={name}
             onChange={inputChangeMiddleware}
+            required
           />
         </div>
         <div className='form__item'>
@@ -51,6 +52,7 @@ function CustomerForm() {
             id='phone'
             value={phone}
             onChange={inputChangeMiddleware}
+            required
           />
         </div>
         <div className='form__item'>
@@ -61,6 +63,7 @@ function CustomerForm() {
             id='mail'
             value={mail}
             onChange={inputChangeMiddleware}
+            required
           />
         </div>
         <div className='form__item'>

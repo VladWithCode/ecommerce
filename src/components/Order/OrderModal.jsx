@@ -24,7 +24,7 @@ function OrderModal({ orderId }) {
             Guarda tu número de pedido para cualquier aclaración o para
             consultar su estado en&nbsp;
             <Link
-              to={`/ver-pedido/${orderId}`}
+              to={`/orden/${orderId}`}
               target='_blank'
               className='order-link'>
               Ver mi pedido

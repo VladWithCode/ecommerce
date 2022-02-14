@@ -27,7 +27,7 @@ function Resume({ cart }) {
         </p>
         <p className='resume-total'>
           Total:
-          <strong>USD${cart.total}</strong>
+          <strong>USD${priceToString(cart.total)}</strong>
         </p>
       </div>
     </div>
