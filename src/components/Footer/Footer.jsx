@@ -17,15 +17,12 @@ function Footer() {
             <Link to='/orden' className='footer__link'>
               Ver mi pedido
             </Link>
-            <Link to='/preguntas-frecuentes' className='footer__link'>
-              Preguntas frecuentes
-            </Link>
-            <Link to='/devoluciones' className='footer__link'>
+            {/* <Link to='/devoluciones' className='footer__link'>
               Politica de Devoluciones
             </Link>
             <Link to='/politica-de-privacidad' className='footer__link'>
               Politica de Privacidad
-            </Link>
+            </Link> */}
             <Link to='/terminos-y-condiciones' className='footer__link'>
               Terminos y Condiciones
             </Link>
