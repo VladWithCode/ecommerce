@@ -6,28 +6,29 @@ export default function Terminos() {
       <p className='paraph'>
         INFORMACIÓN AL CLIENTE, TÉRMINOS Y CONDICIONES PARA MEXICO
       </p>
+      <p className='paraph'>shinyandglowingnaths.com</p>
 
       <p className='paraph mt'>
         <strong>1. ÁMBITO DE APLICACIÓN</strong> Los presentes términos y
         condiciones comerciales generales serán válidos para todos los pedidos
-        realizados a través del sitio web www.j-nekklaces.com.mx (&quot;el Sitio
-        Web&quot;). Le rogamos que lea atentamente los presentes Términos y
-        Condiciones Comerciales Generales antes de pedir productos en este Sitio
-        Web. Mediante la realización de un pedido de nuestros productos, usted
-        declara su conformidad con las disposiciones siguientes y confirma estar
-        facultado para celebrar contratos con carácter jurídicamente vinculante
-        y tener como mínimo 18 años de edad. Solo aceptaremos términos y
-        condiciones que difieran de estos Términos y Condiciones Comerciales
-        Generales si los hemos confirmado previamente por escrito.
+        realizados a través del sitio web shinyandglowingnaths.com (&quot;el
+        Sitio Web&quot;). Le rogamos que lea atentamente los presentes Términos
+        y Condiciones Comerciales Generales antes de pedir productos en este
+        Sitio Web. Mediante la realización de un pedido de nuestros productos,
+        usted declara su conformidad con las disposiciones siguientes y confirma
+        estar facultado para celebrar contratos con carácter jurídicamente
+        vinculante y tener como mínimo 18 años de edad. Solo aceptaremos
+        términos y condiciones que difieran de estos Términos y Condiciones
+        Comerciales Generales si los hemos confirmado previamente por escrito.
       </p>
 
       <p className='paraph mt'>
         <strong>2. PARTE CONTRATANTE</strong>
-        &nbsp;Este Sitio Web para la venta de mercancías a través de internet es
-        operado por Jairo Bladimir Rangel Cabrera como razón social con RFC
-        RACJ000428EU3 con oficinas en calle Rio Nazas #213, Colonia Valle del
-        Sur Nuestro servicio de atención al cliente está a su disposición para
-        cualquier cuestión: contacto@j-nekklaces.com.mx
+        Este Sitio Web para la venta de mercancías a través de internet es
+        operado por Natalia Vargas Pulgarin como razón social con RFC
+        VAPN980610F8A con oficinas en calle General Miguel Gutiérrez #423, Fracc
+        Domingo Arrieta, C.P. 34180 Nuestro servicio de atención al cliente está
+        a su disposición para cualquier cuestión: shinyandglowing@outlook.com
       </p>
 
       <p className='paraph mt'>
@@ -50,9 +51,9 @@ export default function Terminos() {
       </p>
       <p className='paraph'>
         Queda excluida toda responsabilidad por falta de inventario y
-        no-disponibilidad de productos. JNekklaces se reserva el derecho a
-        limitar el número de productos (o el número de una determinada SKU)
-        vendidos a un cliente.
+        no-disponibilidad de productos. shinyandglowingnaths se reserva el
+        derecho a limitar el número de productos (o el número de una determinada
+        SKU) vendidos a un cliente.
       </p>
       <p className='paraph'>
         Tenga en cuenta que, tras la confirmación del pedido, no se podrán
@@ -65,14 +66,14 @@ export default function Terminos() {
       <p className='paraph mt'>
         <strong>
           5. RESERVA DE PRESTACIÓN EN EL CASO DE MERCANCÍA NO SUMINISTRABLE
-        </strong>{' '}
+        </strong>
         Si la mercancía pedida no se puede suministrar en el plazo de 30 días a
         partir del día siguiente a su pedido, aunque previamente le hubiéramos
         confirmado, le informaremos sobre la no-disponibilidad del producto y le
         reembolsaremos inmediatamente las contraprestaciones que ya hubiese
-        pagado. JNekklaces ., no será responsable de los daños o perjuicios que
-        pudiesen derivar de la falta de disponibilidad de mercancía en cualquier
-        momento.
+        pagado. <strong>shinyandglowingnaths</strong>, no será responsable de
+        los daños o perjuicios que pudiesen derivar de la falta de
+        disponibilidad de mercancía en cualquier momento.
       </p>
 
       <p className='paraph mt'>
@@ -85,11 +86,11 @@ export default function Terminos() {
       </p>
 
       <p className='paraph'>
-        La venta de productos de joyería se realiza a través de JNekklaces , con
-        sede en México. Tenga en cuenta que, en el caso de pagos extranjeros
-        mediante tarjeta de crédito, la entidad crediticia que ha emitido la
-        tarjeta puede cobrarle una sobretasa sobre las ventas en el extranjero
-        (aprox. 1-2 %).
+        La venta de productos de joyería se realiza a través de
+        <strong>shinyandglowingnaths.com</strong>, con sede en México. Tenga en
+        cuenta que, en el caso de pagos extranjeros mediante tarjeta de crédito,
+        la entidad crediticia que ha emitido la tarjeta puede cobrarle una
+        sobretasa sobre las ventas en el extranjero (aprox. 1-2 %).
       </p>
 
       <p className='paraph mt'>
@@ -129,7 +130,7 @@ export default function Terminos() {
       <p className='paraph mt'>
         <strong>8. ENTREGA Y RESERVA DEL TÍTULO DE PROPIEDAD</strong> El
         suministro de la mercancía pedida es realizado por el servicio de
-        reparto contratado por nosotros, normalmente en el plazo de 5-10 días
+        reparto contratado por nosotros, normalmente en el plazo de 7-15 días
         hábiles contados a partir del día siguiente a su pedido, realizándose la
         entrega en la dirección de envío proporcionada por usted. En nuestra
         sección de Ayuda encontrará los días festivos en los que no se tramitan
@@ -149,18 +150,20 @@ export default function Terminos() {
       </p>
 
       <p className='paraph mt'>
-        <strong>9. GARANTÍA</strong> En d&quot;Joyería JNekklaces d&quot; nos
-        hacemos responsables y confiamos en la calidad de nuestras piezas. Por
-        consiguiente, si alguna pieza tuviese un defecto de fábrica que se
-        compruebe, d&quot;Joyería JNekklaces d&quot; se compromete a cambiar o
-        reponer dicha pieza.
+        <strong>9. GARANTÍA</strong> En &quot;Joyería
+        <strong>shinyandglowingnaths.com</strong>&quot; nos hacemos responsables
+        y confiamos en la calidad de nuestras piezas. Por consiguiente, si
+        alguna pieza tuviese un defecto de fábrica que se compruebe,
+        &quot;Joyería
+        <strong>shinyandglowingnaths.com</strong>&quot; se compromete a cambiar
+        o reponer dicha pieza.
       </p>
 
       <p className='paraph'>
         No nos hacemos responsables por el uso, o mal uso, de la pieza en un
-        plazo de 15 días hábiles apartir de su compra. El medio para hacer dicha
-        reclamación, aclaración y cualquier cambio será por medio del correo
-        electrónico contacto@j-nekklaces.com.mx.
+        plazo de 15 días hábiles a partir de su compra. El medio para hacer
+        dicha reclamación, aclaración y cualquier cambio será por medio del
+        correo electrónico: shinyandglowing@outlook.com.
       </p>
 
       <p className='paraph'>
@@ -168,8 +171,8 @@ export default function Terminos() {
         causados por accidentes, contacto con líquidos, uso inadecuado o
         desgaste común y ordinario, modificación, intento de reparación,
         contacto con líquidos, negligencia o por no seguir las recomendaciones
-        de cuidado especial de productos indicadas por JNekklaces . La presente
-        garantía no cubre: i) Cristales opacos (pérdida de brillo), ii)
+        de cuidado especial de productos indicadas por shinyandglowingnaths . La
+        presente garantía no cubre: i) Cristales opacos (pérdida de brillo), ii)
         Coloración verdosa/amarillenta en la base del metal, iii) manchas o
         pérdida de la base reflejante por filtración de humedad (contacto con
         líquidos: agua, perfumes, fragancias, cremas, iv) Pérdida del
@@ -185,24 +188,25 @@ export default function Terminos() {
         indique fecha de compra, y el código del producto así como presentar el
         producto en perfecto estado sin marcas de uso previo y en su empaque
         original. La aceptación de la garantía queda sujeta a la valoración y
-        decisión de JNekklaces.
+        decisión de <strong>shinyandglowingnaths</strong>.
       </p>
 
       <p className='paraph'>
         <strong>Cambios a nivel Internacional:</strong> Debido a diferencias de
         impuestos, estructura distinta de precios, requisitos legales locales y
-        razones logísticas, JNekklaces no puede ofrecer la posibilidad de
-        realizar cambios de producto ni tampoco una política de reembolso a
-        nivel internacional. Por lo tanto, JNekklaces no podrá cambiar, o
-        sustituir ningún producto que no sea devuelto en el mismo país de
-        compra, es decir, no se realizan cambios, devoluciones ni sustitución de
-        productos comprados en el extranjero.
+        razones logísticas, <strong>shinyandglowingnaths</strong> no puede
+        ofrecer la posibilidad de realizar cambios de producto ni tampoco una
+        política de reembolso a nivel internacional. Por lo tanto,
+        <strong>shinyandglowingnaths</strong> no podrá cambiar, o sustituir
+        ningún producto que no sea devuelto en el mismo país de compra, es
+        decir, no se realizan cambios, devoluciones ni sustitución de productos
+        comprados en el extranjero.
       </p>
 
       <p className='paraph mt'>
-        <strong>11. RESPONSABILIDAD</strong> JNekklaces , responderá ante usted
-        solo en el caso de daños ocasionados de forma intencionada o con
-        negligencia grave.
+        <strong>10. RESPONSABILIDAD</strong>
+        <strong>shinyandglowingnaths</strong>, responderá ante usted solo en el
+        caso de daños ocasionados de forma intencionada o con negligencia grave.
       </p>
 
       <p className='paraph'>
@@ -215,18 +219,18 @@ export default function Terminos() {
         La exclusión o la limitación de la responsabilidad de indemnización por
         daños y perjuicios de conformidad con los apartados anteriores también
         serán válidas para aquellas reclamaciones contra colaboradores o agentes
-        de JNekklaces.
+        de <strong>shinyandglowingnaths</strong>.
       </p>
 
       <p className='paraph mt'>
-        <strong>12. CLÁUSULA DE INDIVIDUALIDAD DE LAS DISPOSICIONES</strong> Si
+        <strong>11. CLÁUSULA DE INDIVIDUALIDAD DE LAS DISPOSICIONES</strong> Si
         una disposición de los presentes Términos y Condiciones Comerciales
         Generales fuese o resultase no válida o inexigible, ello no afectará a
         la vigencia de las disposiciones restantes.
       </p>
 
       <p className='paraph mt'>
-        <strong>13. DERECHO APLICABLE</strong> Los contratos celebrados bajo los
+        <strong>12. DERECHO APLICABLE</strong> Los contratos celebrados bajo los
         presentes Términos y Condiciones Comerciales Generales estarán sujetos
         al derecho mexicano quedando excluida toda remisión ulterior a
         legislación extranjera. La Convención de las Naciones Unidas sobre los
