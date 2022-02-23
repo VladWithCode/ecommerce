@@ -30,14 +30,14 @@ function Footer() {
           <div className='footer__col'>
             <h3 className='footer__heading center'>Atención a cliente.</h3>
             <p className='footer__paraph'>
-              <strong>Dirección:</strong> Calle Agata #317, Joyas del Valle,
-              C.P.34237, Durango, Durango México.
+              <strong>Dirección:</strong> Calle General Miguel Gutiérrez #423,
+              Fracc Domingo Arrieta, C.P. 34180, Durango, Durango México.
             </p>
             <p className='footer__paraph'>
-              <strong>Correo:</strong> gringscontacto@gmail.com
+              <strong>Correo:</strong> shinyandglowing@outlook.com
             </p>
             <p className='footer__paraph'>
-              <strong>Telefóno:</strong> 618-335-3212
+              <strong>Telefóno:</strong> 618-155-6501
             </p>
             <div className='cards'>
               <svg>
