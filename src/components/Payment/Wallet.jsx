@@ -37,11 +37,13 @@ export default function ApplePay({
     });
 
     pr.canMakePayment().then(res => {
+      console.log(pr, res);
       if (!res) return;
 
       setPaymentRequest(pr);
     });
   }, [stripe, elements]);
+
   if (paymentRequest) {
     paymentRequest.on('paymentmethod', async e => {
       setLoading(true);
@@ -108,7 +110,7 @@ export default function ApplePay({
   }
 
   return (
-    <form className='mt-2' data-gpay-form>
+    <form className='mt-2' data-gpay-form style={{ marginBottom: '1rem' }}>
       {paymentRequest && (
         <PaymentRequestButtonElement
           options={{ paymentRequest: paymentRequest }}
