@@ -67,6 +67,36 @@ export default function StripeCheckout({
 
     if (!stripe || !elements) return;
 
+    const invalidFields = [];
+
+    for (const [k, v] of Object.entries(formValues)) {
+      if (k !== 'email' && k !== 'name' && k !== 'phone') continue;
+
+      if (!v || String(v).length === 0) {
+        switch (k) {
+          case 'email':
+            invalidFields.push('Email');
+            break;
+          case 'name':
+            invalidFields.push('Nombre');
+            break;
+          case 'phone':
+            invalidFields.push('Telefono');
+        }
+      }
+    }
+
+    if (invalidFields.length) {
+      dispatch(
+        uiTempToast(
+          `Los campos ${invalidFields
+            .join(', ')
+            .toUpperCase()} son obligatorios`
+        )
+      );
+      return;
+    }
+
     setLoading(true);
     setDisableButton(true);
 

@@ -1,5 +1,5 @@
-// const SERVER_URI = 'http://localhost:3000';
-const SERVER_URI = 'https://shinyandglowingnaths.com';
+const SERVER_URI = 'http://localhost:3030';
+// const SERVER_URI = 'https://shinyandglowingnaths.com';
 
 export const swrFetcher = async url => {
   const res = await fetch(SERVER_URI + url);
