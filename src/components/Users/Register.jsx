@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 function Register() {
   const { logged, customerData } = useSelector(state => state.user);
@@ -11,7 +11,7 @@ function Register() {
   useEffect(() => {
     if (logged) navigate('/usuario');
   }, [logged]);
-  
+
   const [formValues, handleInputChange] = useForm({
     name: '',
     lastname: '',
@@ -50,15 +50,14 @@ function Register() {
   };
 
   return (
-    <div className="Register">
-      <form className="signin-form" onSubmit={submitForm}>
-        <div className="sigin-form__header">
+    <div className='Register'>
+      <form className='signin-form' onSubmit={submitForm}>
+        <div className='sigin-form__header'>
           <h4>Crea una Cuenta</h4>
         </div>
-        
       </form>
     </div>
-  )
+  );
 }
 
-export default Register
+export default Register;
