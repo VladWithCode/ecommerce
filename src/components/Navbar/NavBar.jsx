@@ -7,7 +7,7 @@ function NavBar() {
   return (
     <nav className='navbar'>
       <div className='navbar__logo'>
-        <Link to='/'>Shiny & Glowing</Link>
+        <Link to='/'>Some Store</Link>
       </div>
       <div className='navbar__navigation'>
         <NavNavigation />

@@ -6,10 +6,10 @@ import ProductGallery from './Products/ProductGallery';
 function Home() {
   return (
     <div className='container'>
-      {/* <Hero src='/img/hero_img.png' alt='Hero IMG' /> */}
-      <h1 className='h1'>Productos Destacados</h1>
+      <Hero src='/img/banner.jpg' alt='Hero IMG' />
+      <h2 className='h2 pb-3'>Productos Destacados</h2>
       <ProductGallery limit={10} />
-      <Link className='btn' to='/productos'>
+      <Link className='btn mt-6' to='/productos'>
         Ver más
       </Link>
     </div>

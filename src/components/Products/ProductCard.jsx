@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { productSet } from '../../actions/productActions';
-import { SERVER_URI } from '../../config/globals';
+import { SERVER_URL } from '../../config/globals';
 import { priceToString } from '../../functions/miscHelpers';
 
 function ProductCard({ product }) {
@@ -15,7 +15,11 @@ function ProductCard({ product }) {
       to={`/producto/${_id}`}
       onClick={() => dispatch(productSet(product))}>
       <div className='display-product__image'>
-        <img src={SERVER_URI + imgs[0]} alt={`${name}-img`} className='img' />
+        <img
+          src={/* SERVER_URL +  */ imgs[0]}
+          alt={`${name}-img`}
+          className='img'
+        />
       </div>
       <div className='display-product__info'>
         <h2 className='product-name'>{name}</h2>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { cartRemoveItem, cartSetQty } from '../../actions/cartActions';
-import { SERVER_URI } from '../../config/globals';
+import { SERVER_URL } from '../../config/globals';
 import { priceToString } from '../../functions/miscHelpers';
 
 function ProductShort({ product, isOrderDetail }) {
@@ -16,7 +16,7 @@ function ProductShort({ product, isOrderDetail }) {
             &times;
           </span>
           <div className='image'>
-            <img src={SERVER_URI + imgs[0]} alt={name} className='img' />
+            <img src={SERVER_URL + imgs[0]} alt={name} className='img' />
           </div>
         </>
       )}

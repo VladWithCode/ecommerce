@@ -69,7 +69,7 @@
     padding: 0.35rem 0 0.25rem;
     border-top: var(--input-border);
     border-bottom: var(--input-border);
-    color: lighten($color-text-light, $amount: 30);
+    color: lighten($color-gray-l, $amount: 30);
   }
 
   .expiry-input {
@@ -124,7 +124,7 @@
   &__label {
     font-size: 1.2rem;
     font-weight: 400;
-    color: $color-text-gray;
+    color: $color-gray;
     margin: auto;
     margin-left: 0.5rem;
     margin-bottom: 0.5rem;

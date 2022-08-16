@@ -1,8 +1,8 @@
-const SERVER_URI = 'http://localhost:3030';
-// const SERVER_URI = 'https://shinyandglowingnaths.com';
+const SERVER_URL = 'http://localhost:3030';
+// const SERVER_URL = 'https://shinyandglowingnaths.com';
 
 export const swrFetcher = async url => {
-  const res = await fetch(SERVER_URI + url);
+  const res = await fetch(SERVER_URL + url);
 
   if (!res.ok) {
     const data = await res.json();
@@ -29,7 +29,7 @@ export const serverRequest = async (endpoint, method, body, headers) => {
   headers && (options.headers = headers);
 
   try {
-    const res = await fetch(SERVER_URI + endpoint, options);
+    const res = await fetch(SERVER_URL + endpoint, options);
     return await res.json();
   } catch (err) {
     return { err };

@@ -6,6 +6,7 @@
   position: relative;
 
   & svg {
+    fill: currentColor;
     height: 2rem;
     width: 2rem;
   }
@@ -23,7 +24,7 @@
     justify-content: center;
     align-items: center;
     background-color: $color-danger;
-    color: white;
+    color: $color-light;
 
     & span {
       pointer-events: none;
@@ -56,7 +57,7 @@
 
     & p {
       font-size: 3rem;
-      color: $color-text-light !important;
+      color: $color-light !important;
       line-height: 1.2;
       max-width: 70%;
       text-align: center;
@@ -79,7 +80,7 @@
     justify-content: space-between;
     padding: 2rem 2rem 2rem 0;
     align-items: center;
-    border-bottom: solid 1px $color-bc-accent;
+    // border-bottom: solid 1px $color-;
 
     &:first-of-type {
       padding-top: 0;
@@ -135,7 +136,7 @@
           height: 3rem;
           outline: none;
           background-color: transparent;
-          border: 1px solid $color-bc-accent;
+          // border: 1px solid $color-bc-accent;
           cursor: pointer;
 
           &:hover {

@@ -1,4 +1,130 @@
-.h1 {
+@for $i from 1 through 6 {
+  .h#{$i} {
+    font-size: 2.4rem * calc(4 / $i) !important;
+  }
+
+  .fs-#{$i} {
+    font-size: 2.8rem * calc(2 / $i) !important;
+  }
+}
+
+.fw-200 {
+  font-weight: 200 !important;
+}
+
+.fw-light,
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+.fw-regular,
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-bold,
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-xbold,
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.heading {
   font-size: 3rem;
-  font-weight: 600;
+  padding-left: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: $color-gray-l;
+  margin-bottom: 1rem;
+}
+
+.text {
+  // Align
+  &-left {
+    text-align: left !important;
+  }
+
+  &-right {
+    text-align: right !important;
+  }
+
+  &-center {
+    text-align: center !important;
+  }
+
+  // Color
+  &-mute {
+    color: $color-gray-l !important;
+  }
+
+  &-reset-color {
+    color: inherit !important;
+  }
+
+  &-primary {
+    color: $color-primary !important;
+
+    &-l {
+      color: $color-primary-l !important;
+    }
+
+    &-d {
+      color: $color-primary-d !important;
+    }
+  }
+
+  &-secondary {
+    color: $color-secondary !important;
+
+    &-l {
+      color: $color-secondary-l !important;
+    }
+
+    &-d {
+      color: $color-secondary-d !important;
+    }
+  }
+
+  &-black {
+    color: $color-black !important;
+  }
+
+  &-dark {
+    color: $color-dark !important;
+  }
+
+  &-light {
+    color: $color-light !important;
+  }
+
+  &-white {
+    color: $color-white !important;
+  }
+
+  &-success {
+    color: $color-success !important;
+  }
+
+  &-info {
+    color: $color-info !important;
+  }
+
+  &-danger {
+    color: $color-danger !important;
+  }
+
+  &-warning {
+    color: $color-warning !important;
+  }
 }

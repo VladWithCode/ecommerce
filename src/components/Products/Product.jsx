@@ -6,7 +6,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { cartAddItem } from '../../actions/cartActions';
 import { productClear, productSet } from '../../actions/productActions';
 import { uiTempToast } from '../../actions/uiActions';
-import { SERVER_URI } from '../../config/globals';
+import { SERVER_URL } from '../../config/globals';
 import { priceToString } from '../../functions/miscHelpers';
 import { serverRequest } from '../../functions/serverRequest';
 
@@ -53,7 +53,7 @@ function Product() {
       <div className='product'>
         <div className='product__img-box'>
           <img
-            src={SERVER_URI + product.imgs[0]}
+            src={SERVER_URL + product.imgs[0]}
             alt={product.name}
             className='img'
           />

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import useSWR from 'swr';
-import { SERVER_URI } from '../../config/globals';
+import { SERVER_URL } from '../../config/globals';
 import { priceToString } from '../../functions/miscHelpers';
 import { swrFetcher } from '../../functions/serverRequest';
 import ProductShort from '../Products/ProductShort';
