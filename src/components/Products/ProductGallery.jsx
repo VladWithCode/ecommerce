@@ -13,7 +13,7 @@ function ProductGallery({ limit }) {
 
   const { ctg } = useParams();
 
-  if (ctg) fetchURI += `ctgs=${ctg}&`;
+  if (ctg && ctg !== 'Ver todo') fetchURI += `ctgs=${ctg}&`;
 
   if (params.get('promo') === 'true') fetchURI += 'promo=true&';
 
