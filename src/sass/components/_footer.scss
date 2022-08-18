@@ -28,6 +28,11 @@
     padding: 0 2rem;
     flex: 1;
 
+    &--flex {
+      display: flex;
+      flex-flow: column wrap;
+    }
+
     &:last-of-type {
       @include respond(phone) {
         margin-top: 5rem;
@@ -36,20 +41,22 @@
   }
 
   &__link {
-    display: block;
     font-size: 1.4rem;
-    color: $color-primary;
+    color: inherit;
     margin-bottom: 0.4rem;
     padding: 0 0.4rem;
     transition: color 0.3s linear;
+    border-bottom: 1px solid transparent;
+    margin-right: auto;
 
     &:hover {
-      color: darken($color-primary, 20);
+      border-bottom-color: currentColor;
     }
   }
 
   &__heading {
-    color: $color-gray;
+    width: 100%;
+    color: inherit;
     font-size: 1.6rem;
     font-weight: 600;
     margin-bottom: 1.2rem;
@@ -106,14 +113,14 @@
   }
 
   .cards {
-    padding: 1rem 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: flex-end;
 
     svg {
       width: 7rem;
       height: 7rem;
-      margin-right: 4rem;
+      margin-right: 3rem;
     }
   }
 }

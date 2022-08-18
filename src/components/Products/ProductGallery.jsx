@@ -1,10 +1,12 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useSearchParams } from 'react-router-dom';
 import useSWR from 'swr';
 import Loading from '../Loading';
 import ProductCard from './ProductCard';
 
 function ProductGallery({ limit }) {
+  const [params] = useSearchParams();
+
   let fetchURI = '/api/public/products?';
 
   if (limit) fetchURI += `limit=${limit}&`;
@@ -12,6 +14,8 @@ function ProductGallery({ limit }) {
   const { ctg } = useParams();
 
   if (ctg) fetchURI += `ctgs=${ctg}&`;
+
+  if (params.get('promo') === 'true') fetchURI += 'promo=true&';
 
   const { data, error } = useSWR(fetchURI);
 

@@ -3,22 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 95rem;
+  width: 106rem;
   max-width: 100%;
   margin: 0 auto;
-
-  & .btn {
-    background-color: $color-secondary;
-    color: white;
-    padding: 1.3rem 4rem;
-    border-radius: 0.8rem;
-    margin: 3rem 0 6rem 0;
-    @include transition;
-
-    &:hover {
-      background-color: darken($color-secondary, 10);
-    }
-  }
 
   &-empty {
     height: 30rem;
@@ -35,47 +22,6 @@
       text-align: center;
     }
   }
-
-  // & .side-menu {
-  //     flex: 0 1 calc(20% - 1rem);
-  //     display: flex;
-  //     flex-direction: column;
-
-  //     &__item {
-  //         width: 100%;
-  //         padding: 2rem 0;
-  //         border-bottom: 1px solid $color-bc-accent;
-  //         text-transform: capitalize;
-  //         position: relative;
-  //         overflow: hidden;
-
-  //         &::before {
-  //             content: '';
-  //             position: absolute;
-  //             right: 0;
-  //             top: 0;
-  //             height: 100%;
-  //             width: 2rem;
-  //             background-color: $color-secondary;
-  //             transform: translateX(101%);
-  //             @include transition;
-  //         }
-
-  //         &:hover {
-
-  //             &::before {
-  //                 transform: translateX(0);
-  //             }
-  //         }
-
-  //         &.active {
-  //             &::before {
-  //                 transform: translateX(0);
-  //             }
-  //         }
-
-  //     }
-  // }
 
   & .products-list {
     width: 90%;

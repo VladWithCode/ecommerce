@@ -9,7 +9,7 @@ function Home() {
       <Hero src='/img/banner.jpg' alt='Hero IMG' />
       <h2 className='h2 pb-3'>Productos Destacados</h2>
       <ProductGallery limit={10} />
-      <Link className='btn mt-6' to='/productos'>
+      <Link className='btn btn--secondary mt-6 px-2' to='/productos'>
         Ver más
       </Link>
     </div>

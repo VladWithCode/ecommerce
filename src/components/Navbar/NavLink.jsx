@@ -6,7 +6,7 @@ function NavLink({ to, keystr }) {
     <ActiveLink
       to={to}
       key={keystr}
-      className={({ isActive }) => `navbar__link ${isActive ? 'active' : ''}`}>
+      className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`}>
       {keystr}
     </ActiveLink>
   );

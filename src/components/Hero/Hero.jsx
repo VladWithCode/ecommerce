@@ -6,13 +6,13 @@ function Hero({ src, alt }) {
     <div className='hero'>
       <img src={src} alt={alt} className='hero__img' />
       <span className='hero__bg-overlay'></span>
-      <h2 className='h2 hero__title px-6 pb-3 fw-300'>
+      <h2 className='hero__title h2 fw-300 px-6 ml-6n mb-4'>
         ¡Aprovecha! <span className='fs-1 fw-bold'>DESCUENTOS</span> en anillos
         y argollas.
       </h2>
       <Link
-        className='hero__cta btn btn-primary fs-3 fw-600 text-white'
-        to='/productos/promocion'>
+        className='hero__cta btn btn--secondary fs-4 fw-600 py-1 px-3 mb-4'
+        to='/productos?promo=true'>
         Ver Promoción
       </Link>
     </div>

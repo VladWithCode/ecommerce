@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  overflow-y: hidden;
+  // overflow: hidden;
   max-height: 60rem;
   margin-bottom: 2rem;
   width: 100%;
@@ -19,6 +19,11 @@
     left: 0;
     right: 0;
     height: 100%;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     background-image: linear-gradient(
       to top,
       rgba($color-dark, 45%) 35%,
@@ -28,21 +33,21 @@
 
   &__img {
     position: absolute;
-    object-fit: contain;
-    object-position: center -25px;
-    width: 100vw;
+    object-fit: cover;
+    object-position: center 60%;
     max-height: 100%;
+    z-index: -1;
+    width: 100vw;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    z-index: -1;
   }
 
   &__cta {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 5rem;
+    text-transform: uppercase;
   }
 }

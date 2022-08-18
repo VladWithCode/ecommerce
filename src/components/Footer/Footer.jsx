@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <footer className='footer'>
-      <div className='footer__container'>
+      <div className='container'>
         <div className='footer__row footer__row--first'>
-          <div className='footer__col'>
-            <h3 className='footer__heading'>Navegación</h3>
+          <div className='footer__col footer__col--flex'>
+            <h3 className='footer__heading text-white'>Navegación</h3>
             <Link to='/' className='footer__link'>
               Inicio
             </Link>
@@ -39,6 +39,10 @@ function Footer() {
             <p className='footer__paraph'>
               <strong>Telefóno:</strong> 618-155-6501
             </p>
+          </div>
+        </div>
+        <div className='footer__row'>
+          <div className='footer__col'>
             <div className='cards'>
               <svg>
                 <use href='/icons/mastercard.svg#mastercard'></use>
@@ -47,6 +51,13 @@ function Footer() {
                 <use href='/icons/visa.svg#visa'></use>
               </svg>
             </div>
+          </div>
+        </div>
+        <div className='footer__row'>
+          <div className='footer__col'>
+            <p className='footer__paraph fw-300 fs-6'>
+              &copy; 2022 eJewels.com
+            </p>
           </div>
         </div>
       </div>

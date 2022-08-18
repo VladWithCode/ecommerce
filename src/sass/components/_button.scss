@@ -1,0 +1,176 @@
+.btn {
+  font-size: var(--btn-fz, 1.6rem);
+  background-color: $color-gray-d;
+  border: 1px solid $color-gray-d;
+  border-radius: $border-radius;
+  color: $color-white;
+  padding: 1rem;
+  margin: auto;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    color: $color-gray-d;
+    border-color: currentColor;
+    background-color: $color-white;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.35;
+  }
+
+  &--sm {
+    --btn-fz: 1.2rem;
+    font-weight: 500;
+    padding: 0.5rem 1.4rem;
+  }
+
+  &--success {
+    background-color: $color-success;
+    border-color: $color-success;
+
+    &:hover,
+    &:active {
+      color: $color-success !important;
+    }
+  }
+
+  &--dark {
+    background-color: $color-gray-d;
+    border-color: $color-gray-d;
+
+    &:hover,
+    &:active {
+      color: $color-gray-d;
+    }
+  }
+
+  &--danger {
+    background-color: $color-danger;
+    border-color: $color-danger;
+
+    &:hover,
+    &:active {
+      color: $color-danger !important;
+    }
+  }
+
+  &--info {
+    background-color: $color-info;
+    border-color: $color-info;
+
+    &:hover,
+    &:active {
+      color: $color-info !important;
+    }
+  }
+
+  &--warning {
+    background-color: $color-warning;
+    border-color: $color-warning;
+
+    &:hover,
+    &:active {
+      color: $color-warning !important;
+    }
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    border-color: $color-primary;
+
+    &:hover,
+    &:active {
+      color: $color-primary !important;
+    }
+
+    &-l {
+      background-color: $color-primary-l;
+      border-color: $color-primary-l;
+
+      &:hover,
+      &:active {
+        color: $color-primary-l !important;
+      }
+    }
+
+    &-d {
+      background-color: $color-primary-d;
+      border-color: $color-primary-d;
+
+      &:hover,
+      &:active {
+        color: $color-primary-d !important;
+      }
+    }
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+
+    &:hover,
+    &:active {
+      color: $color-secondary !important;
+    }
+
+    &-l {
+      background-color: $color-secondary-l;
+      border-color: $color-secondary-l;
+
+      &:hover,
+      &:active {
+        color: $color-secondary-l !important;
+      }
+    }
+
+    &-d {
+      background-color: $color-secondary-d;
+      border-color: $color-secondary-d;
+
+      &:hover,
+      &:active {
+        color: $color-secondary-d !important;
+      }
+    }
+  }
+
+  &--left {
+    margin: auto;
+    margin-left: 0;
+  }
+
+  &--right {
+    margin: auto;
+    margin-right: 0;
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &.loading {
+    opacity: 0.75;
+    pointer-events: none;
+
+    .btn-text {
+      display: none;
+    }
+    .btn-spinner {
+      display: block;
+    }
+  }
+
+  .btn-spinner {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid transparent;
+    border-bottom-color: $color-white;
+    border-radius: 50%;
+    animation-name: spinner;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+}
