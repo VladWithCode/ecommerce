@@ -30,14 +30,14 @@ function Footer() {
           <div className='footer__col'>
             <h3 className='footer__heading center'>Atención a cliente.</h3>
             <p className='footer__paraph'>
-              <strong>Dirección:</strong> Calle General Miguel Gutiérrez #423,
-              Fracc Domingo Arrieta, C.P. 34180, Durango, Durango México.
+              <strong>Dirección:</strong> Calle Agata 125, Colonia 20 de
+              Noviembre 34237 Durango, Dgo.
             </p>
             <p className='footer__paraph'>
-              <strong>Correo:</strong> shinyandglowing@outlook.com
+              <strong>Correo:</strong> vargas_gdavid@outlook.com
             </p>
             <p className='footer__paraph'>
-              <strong>Telefóno:</strong> 618-155-6501
+              <strong>Telefóno:</strong> 618-335-3212
             </p>
           </div>
         </div>
@@ -56,7 +56,7 @@ function Footer() {
         <div className='footer__row'>
           <div className='footer__col'>
             <p className='footer__paraph fw-300 fs-6'>
-              &copy; 2022 eJewels.com
+              &copy; 2022 CTFX Jewels
             </p>
           </div>
         </div>
