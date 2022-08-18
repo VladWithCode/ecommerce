@@ -1,5 +1,4 @@
-const SERVER_URL = 'http://localhost:3030';
-// const SERVER_URL = 'https://shinyandglowingnaths.com';
+import { SERVER_URL } from '../config/globals';
 
 export const swrFetcher = async url => {
   const res = await fetch(SERVER_URL + url);
