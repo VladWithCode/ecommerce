@@ -7,7 +7,7 @@ function NavBar() {
   return (
     <nav className='navbar'>
       <div className='navbar__logo'>
-        <Link to='/'>Some Store</Link>
+        <Link to='/'>CTFX Jewels</Link>
       </div>
       <div className='navbar__navigation'>
         <NavNavigation />
