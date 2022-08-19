@@ -15,11 +15,7 @@ function ProductCard({ product }) {
       to={`/producto/${_id}`}
       onClick={() => dispatch(productSet(product))}>
       <div className='display-product__image'>
-        <img
-          src={/* SERVER_URL +  */ imgs[0]}
-          alt={`${name}-img`}
-          className='img'
-        />
+        <img src={SERVER_URL + imgs[0]} alt={`${name}-img`} className='img' />
       </div>
       <div className='display-product__info'>
         <h2 className='product-name'>{name}</h2>
