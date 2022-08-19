@@ -22,7 +22,7 @@ function ProductGallery({ limit }) {
   if (!data && !error) return <Loading />;
 
   return (
-    <div className='products-list'>
+    <div className='products-list py-3'>
       {error ? (
         <p>Oops... Ocurrio un error inesperado.</p>
       ) : data.products.length <= 0 ? (
