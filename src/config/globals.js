@@ -1,6 +1,6 @@
-export const SERVER_URL = 'http://localhost:3030';
+// export const SERVER_URL = 'http://localhost:3030';
 
-// export const SERVER_URL = 'https://goldetshine.sibradgo.com.mx';
+export const SERVER_URL = 'https://goldetshine.sibradgo.com.mx';
 
 export const API_URL = SERVER_URL + '/api';
 
