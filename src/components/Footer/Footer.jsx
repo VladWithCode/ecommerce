@@ -55,9 +55,7 @@ function Footer() {
         </div>
         <div className='footer__row'>
           <div className='footer__col'>
-            <p className='footer__paraph fw-300 fs-6'>
-              &copy; 2022 CTFX Jewels
-            </p>
+            <p className='footer__paraph fw-300 fs-6'>&copy; 2022 Gold&Shine</p>
           </div>
         </div>
       </div>

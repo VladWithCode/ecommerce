@@ -6,21 +6,20 @@ export default function Terminos() {
       <p className='paraph'>
         INFORMACIÓN AL CLIENTE, TÉRMINOS Y CONDICIONES PARA MEXICO
       </p>
-      <p className='paraph'>jewels.certificatex-mx-edu-gob.org</p>
+      <p className='paraph'>goldetshine.sibradgo.com</p>
 
       <p className='paraph mt'>
         <strong>1. ÁMBITO DE APLICACIÓN</strong> Los presentes términos y
         condiciones comerciales generales serán válidos para todos los pedidos
-        realizados a través del sitio web jewels.certificatex-mx-edu-gob.org
-        (&quot;el Sitio Web&quot;). Le rogamos que lea atentamente los presentes
-        Términos y Condiciones Comerciales Generales antes de pedir productos en
-        este Sitio Web. Mediante la realización de un pedido de nuestros
-        productos, usted declara su conformidad con las disposiciones siguientes
-        y confirma estar facultado para celebrar contratos con carácter
-        jurídicamente vinculante y tener como mínimo 18 años de edad. Solo
-        aceptaremos términos y condiciones que difieran de estos Términos y
-        Condiciones Comerciales Generales si los hemos confirmado previamente
-        por escrito.
+        realizados a través del sitio web goldetshine.sibradgo.com (&quot;el
+        Sitio Web&quot;). Le rogamos que lea atentamente los presentes Términos
+        y Condiciones Comerciales Generales antes de pedir productos en este
+        Sitio Web. Mediante la realización de un pedido de nuestros productos,
+        usted declara su conformidad con las disposiciones siguientes y confirma
+        estar facultado para celebrar contratos con carácter jurídicamente
+        vinculante y tener como mínimo 18 años de edad. Solo aceptaremos
+        términos y condiciones que difieran de estos Términos y Condiciones
+        Comerciales Generales si los hemos confirmado previamente por escrito.
       </p>
 
       <p className='paraph mt'>
@@ -52,7 +51,7 @@ export default function Terminos() {
       </p>
       <p className='paraph'>
         Queda excluida toda responsabilidad por falta de inventario y
-        no-disponibilidad de productos. CTFX Jewels se reserva el derecho a
+        no-disponibilidad de productos. Gold&Shine se reserva el derecho a
         limitar el número de productos (o el número de una determinada SKU)
         vendidos a un cliente.
       </p>
@@ -72,7 +71,7 @@ export default function Terminos() {
         partir del día siguiente a su pedido, aunque previamente le hubiéramos
         confirmado, le informaremos sobre la no-disponibilidad del producto y le
         reembolsaremos inmediatamente las contraprestaciones que ya hubiese
-        pagado. <strong>CTFX Jewels</strong>, no será responsable de los daños o
+        pagado. <strong>Gold&Shine</strong>, no será responsable de los daños o
         perjuicios que pudiesen derivar de la falta de disponibilidad de
         mercancía en cualquier momento.
       </p>
@@ -88,10 +87,10 @@ export default function Terminos() {
 
       <p className='paraph'>
         La venta de productos de joyería se realiza a través de
-        <strong>jewels.certificatex-mx-edu-gob.org</strong>, con sede en México.
-        Tenga en cuenta que, en el caso de pagos extranjeros mediante tarjeta de
-        crédito, la entidad crediticia que ha emitido la tarjeta puede cobrarle
-        una sobretasa sobre las ventas en el extranjero (aprox. 1-2 %).
+        <strong>goldetshine.sibradgo.com</strong>, con sede en México. Tenga en
+        cuenta que, en el caso de pagos extranjeros mediante tarjeta de crédito,
+        la entidad crediticia que ha emitido la tarjeta puede cobrarle una
+        sobretasa sobre las ventas en el extranjero (aprox. 1-2 %).
       </p>
 
       <p className='paraph mt'>
@@ -152,12 +151,12 @@ export default function Terminos() {
 
       <p className='paraph mt'>
         <strong>9. GARANTÍA</strong> En &quot;Joyería
-        <strong>jewels.certificatex-mx-edu-gob.org</strong>&quot; nos hacemos
-        responsables y confiamos en la calidad de nuestras piezas. Por
-        consiguiente, si alguna pieza tuviese un defecto de fábrica que se
-        compruebe, &quot;Joyería
-        <strong>jewels.certificatex-mx-edu-gob.org</strong>&quot; se compromete
-        a cambiar o reponer dicha pieza.
+        <strong>goldetshine.sibradgo.com</strong>&quot; nos hacemos responsables
+        y confiamos en la calidad de nuestras piezas. Por consiguiente, si
+        alguna pieza tuviese un defecto de fábrica que se compruebe,
+        &quot;Joyería
+        <strong>goldetshine.sibradgo.com</strong>&quot; se compromete a cambiar
+        o reponer dicha pieza.
       </p>
 
       <p className='paraph'>
@@ -172,7 +171,7 @@ export default function Terminos() {
         causados por accidentes, contacto con líquidos, uso inadecuado o
         desgaste común y ordinario, modificación, intento de reparación,
         contacto con líquidos, negligencia o por no seguir las recomendaciones
-        de cuidado especial de productos indicadas por CTFX Jewels . La presente
+        de cuidado especial de productos indicadas por Gold&Shine . La presente
         garantía no cubre: i) Cristales opacos (pérdida de brillo), ii)
         Coloración verdosa/amarillenta en la base del metal, iii) manchas o
         pérdida de la base reflejante por filtración de humedad (contacto con
@@ -189,16 +188,16 @@ export default function Terminos() {
         indique fecha de compra, y el código del producto así como presentar el
         producto en perfecto estado sin marcas de uso previo y en su empaque
         original. La aceptación de la garantía queda sujeta a la valoración y
-        decisión de <strong>CTFX Jewels</strong>.
+        decisión de <strong>Gold&Shine</strong>.
       </p>
 
       <p className='paraph'>
         <strong>Cambios a nivel Internacional:</strong> Debido a diferencias de
         impuestos, estructura distinta de precios, requisitos legales locales y
-        razones logísticas, <strong>CTFX Jewels</strong> no puede ofrecer la
+        razones logísticas, <strong>Gold&Shine</strong> no puede ofrecer la
         posibilidad de realizar cambios de producto ni tampoco una política de
         reembolso a nivel internacional. Por lo tanto,
-        <strong>CTFX Jewels</strong> no podrá cambiar, o sustituir ningún
+        <strong>Gold&Shine</strong> no podrá cambiar, o sustituir ningún
         producto que no sea devuelto en el mismo país de compra, es decir, no se
         realizan cambios, devoluciones ni sustitución de productos comprados en
         el extranjero.
@@ -206,7 +205,7 @@ export default function Terminos() {
 
       <p className='paraph mt'>
         <strong>10. RESPONSABILIDAD</strong>
-        <strong>CTFX Jewels</strong>, responderá ante usted solo en el caso de
+        <strong>Gold&Shine</strong>, responderá ante usted solo en el caso de
         daños ocasionados de forma intencionada o con negligencia grave.
       </p>
 
@@ -220,7 +219,7 @@ export default function Terminos() {
         La exclusión o la limitación de la responsabilidad de indemnización por
         daños y perjuicios de conformidad con los apartados anteriores también
         serán válidas para aquellas reclamaciones contra colaboradores o agentes
-        de <strong>CTFX Jewels</strong>.
+        de <strong>Gold&Shine</strong>.
       </p>
 
       <p className='paraph mt'>

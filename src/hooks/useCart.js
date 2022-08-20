@@ -38,7 +38,7 @@ export const useCart = () => {
 
   return {
     cart,
-    error: error?.info.status !== 'AUTH_ERR' ? error : null,
+    error: error?.info?.status !== 'AUTH_ERR' ? error : null,
     loading: !data && !error,
   };
 };
