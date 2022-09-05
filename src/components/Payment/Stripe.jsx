@@ -10,7 +10,7 @@ import { uiTempToast } from '../../actions/uiActions';
 import StripeCheckout from './StripeCheckout';
 
 const stripePromise = loadStripe(
-  'pk_live_51LXu7lLV9DtXHkMfbbqaekRDkDVrkUVRR1veCAXZcVpG2ECQ9U1FLsFVmgUjcl5UMD8LWdbuMDTyWR4wpYek4eBp009NNruZ9I'
+  'pk_live_51LdSOJKIoxcMWONH8qmu2XsQn1nZTJSIf7K3TC0VnWxATWbKEGzy4uuvd01XhrCSoASJVQQTvkXF0mbWHJdfJBSo008UGzGzMS'
   // 'pk_test_51LXu7lLV9DtXHkMfb3qjFvXlfnx0n6CWklylF3MWGh5kOkrx8tjmUK6EGzbDqcMlOB6Q2QYFA6I0DJc2gdXEBuIW00rURXbXUM'
 );
 
